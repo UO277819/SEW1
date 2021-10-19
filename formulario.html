@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>SEW.P0</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Datos con el contenidos que aparece en el navegador -->
+        <h1>Formulario</h1>
+        <nav>
+            <a title="Tim Berners-Lee"
+            tabindex=
+            "1"
+            accesskey="T"
+            href= "index.html">
+            Tim Berners-Lee</a>
+            <a title="Protocolo HTTP"
+            tabindex=
+            "2"
+            accesskey="H"
+            href= "protocolo HTTP.html">
+            Protocolo HTTP</a>
+    
+            <a title= "World Wide Web"
+            tabindex=
+            "3"
+            accesskey="W"
+            href= " WorldWideWeb.html">
+            World Wide Web</a>
+    
+            
+        </nav>
+    </header>
+        
+
+        <form name="Formulario">
+            <main>
+                <section>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre"><br>
+
+                    <label for="Apellidos">Apellidos</label>
+                    <input type="text" id="Apellidos"><br>
+
+                    <label for="Numero Telefono">Numero de Telefono</label>
+                    <input type="number" id="Numero Telefono"><br>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend>
+                            Tienes conocimientos sobre HTTP
+                        </legend>
+                        <label for="yes">Si</label>
+                        <input id="yes" type="radio" name="RadioBoton" value="Si">
+                        <label for="no">No</label>
+                        <input id="no" type="radio" name="RadioBoton" value="No">
+                    </fieldset>
+
+                    <p>Marqué si conoces o te suenan algunas de las diversas versiones de HTTP siguientes</p>
+
+                    <fieldset>
+                        <legend>Versiones:</legend>
+                        <label for="ck09">0.9</label>
+                        <input id="ck09" type="checkbox" value="0.9">
+                        <label for="ck1.0">HTTP/1.0</label>
+                        <input id="ck1.0" type="checkbox" value="1.0">
+                        <label for="ck1">HTTP/1.1</label>
+                        <input id="ck1" type="checkbox" value="1">
+                        <label for="ck1.2">HTTP/1.2</label>
+                        <input id="ck1.2" type="checkbox" value="1.2">
+                        <label for="ck2">HTTP/2</label>
+                        <input id="ck2" type="checkbox" value="2">
+                        <label for="ck3">HTTP/3</label>
+                        <input id="ck3" type="checkbox" value="3">
+                    </fieldset>
+                </section> 
+            </main>
+        <section>
+            <label for="num">Puntuacion de la página</label><br>
+            <input id="num" type=number min="0" max="10" placeholder="Puntue con un numero del 0 al 10"><br>
+            
+            <input type="button" id="finalizar" value="Finalizar">
+        </section>
+        </form>
+
+   
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>SEW.P0</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Datos con el contenidos que aparece en el navegador -->
+        <h1>Protocolo HTTP</h1>
+        
+        <nav>
+            <a title="Tim Berners-Lee"
+            tabindex=
+            "1"
+            accesskey="T"
+            href= "index.html">
+            Tim Berners-Lee</a>
+    
+            <a title= "World Wide Web"
+            tabindex=
+            "2"
+            accesskey="W"
+            href= " WorldWideWeb.html">
+            World Wide Web</a>
+    
+            <a title= "Formulario"
+            tabindex=
+            "3"
+            accesskey="F"
+            href= " formulario.html">
+            Formulario</a>
+        </nav>
+    </header>
+    
+        <section>
+            <h2>Definicion</h2>
+            <p>El Protocolo de transferencia de hipertexto (en inglés, Hypertext Transfer Protocol, abreviado
+                HTTP) es el protocolo de comunicación que permite las transferencias de información a través
+                de archivos (XHML, HTML . . .) en la World Wide Web. HTTP fue desarrollado por el World Wide
+                Web Consortium y la Internet Engineering Task Force, colaboración que culminó en 1999 con
+                la publicación de una serie de RFC, siendo el más importante de ellos el RFC 2616 que 
+                especifica la versión 1.1. HTTP define la sintaxis y la semántica que utilizan los elementos
+                de software de la arquitectura web (clientes, servidores, proxies) para comunicarse. HTTP
+                es un protocolo sin estado, es decir, no guarda ninguna información sobre conexiones anteriores.
+                El desarrollo de aplicaciones web necesita frecuentemente mantener estado. Para esto se usan las
+                cookies, que es información que un servidor puede almacenar en el sistema cliente. Esto le permite
+                a las aplicaciones web instituir la noción de sesión, y también permite rastrear usuarios ya que
+                las cookies pueden guardarse en el cliente por tiempo indeterminado.
+            </p>
+        </section>
+        <section>
+            <h3>Versiones</h3>
+
+            <p>HTTP ha pasado por múltiples versiones del protocolo, muchas de las cuales son compatibles 
+                con las anteriores. El RFC 2145 describe el uso de los números de versión de HTTP. El cliente
+                le dice al servidor al principio de la petición la versión que usa, y el servidor usa la misma
+                o una anterior en su respuesta
+            </p>
+            
+            <dl>
+                <dt>0.9 (lanzada en 1991)</dt>
+                <dd>Obsoleta. Soporta solo un comando, GET, y además no especifica el número de versión HTTP. No soporta 
+                    cabeceras. Como esta versión no soporta POST, el cliente no puede enviarle mucha información al servidor.</dd>
+
+                <dt>HTTP/1.0 (mayo de 1996)</dt>
+                <dd>Esta es la primera revisión del protocolo que especifica su versión en las comunicaciones,
+                    y todavía se usa ampliamente, sobre todo en servidores proxy. Permite los métodos de 
+                petición GET, HEAD y POST.</dd>
+
+                <dt>HTTP/1.1 (junio de 1999)</dt>
+                <dd>Versión más usada actualmente; Las conexiones persistentes están activadas por defecto y 
+                    funcionan bien con los proxies. También permite al cliente enviar múltiples peticiones a 
+                    la vez por la misma conexión (pipelining) lo que hace posible eliminar el tiempo de 
+                    Round-Trip delay por cada petición.</dd>
+            
+                <dt>HTTP/1.2 (febrero de 2000)</dt>
+                <dd>Los primeros borradores de 1995 del documento PEP — an Extension Mechanism for HTTP (el 
+                    cual propone el Protocolo de Extensión de Protocolo, abreviado PEP) los hizo el World Wide
+                    Web Consortium y se envió al Internet Engineering Task Force. El PEP inicialmente estaba 
+                    destinado a convertirse en un rango distintivo de HTTP/1.2.3​ En borradores posteriores, 
+                    sin embargo, se eliminó la referencia a HTTP/1.2. El RFC 2774 (experimental), HTTP Extension
+                    Framework, incluye en gran medida a PEP. Se publicó en febrero de 2000.​</dd>
+
+                <dt>HTTP/2 (mayo de 2015)</dt>
+                <dd>En el año 2012 aparecen los primeros borradores de la nueva versión de HTTP (HTTP/2). 
+                    Esta nueva versión no modifica la semántica de aplicación de http (todos los conceptos 
+                    básicos continúan sin cambios). Sus mejoras se enfocan en como se empaquetan los datos y 
+                    en el transporte. Por ejemplo, añade el uso de una única conexión, la compresión de cabeceras
+                    o el servicio 'server push'. Los exploradores más importantes solo soportan HTTP 2.0 sobre
+                    TLS usando la extensión ALPN4​que requiere TLSv1.2 o superior.</dd>
+
+                <dt>HTTP/3 (Octubre de 2018)</dt>
+                <dd>HTTP/3 es el sucesor propuesto de HTTP/2,6​7​ que ya está en uso en la web, utilizando UDP 
+                    en lugar de TCP para el protocolo de transporte subyacente. Al igual que el HTTP/2, no es 
+                    obsoleto en las versiones principales anteriores del protocolo. El soporte para HTTP/3 fue
+                    agregado a Cloudflare y Google Chrome en septiembre de 2019,8​9​ y puede ser habilitado en 
+                    las versiones estables de Chrome y Firefox.</dd>     
+            </dl>
+        </section>
+
+</body>
+</html>
